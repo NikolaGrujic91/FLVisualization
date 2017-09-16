@@ -9,3 +9,15 @@ C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\obj\Debug\netcoreapp1.1\FLVisualization.DAL.csprojResolveAssemblyReference.cache
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\bin\Debug\netcoreapp1.1\FLVisualization.Models.dll
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\bin\Debug\netcoreapp1.1\FLVisualization.Models.pdb
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\bin\Debug\netcoreapp1.1\FLVisualization.DAL.deps.json
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\bin\Debug\netcoreapp1.1\FLVisualization.DAL.runtimeconfig.json
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\bin\Debug\netcoreapp1.1\FLVisualization.DAL.runtimeconfig.dev.json
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\bin\Debug\netcoreapp1.1\FLVisualization.DAL.dll
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\bin\Debug\netcoreapp1.1\FLVisualization.DAL.pdb
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\bin\Debug\netcoreapp1.1\FLVisualization.Models.dll
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\bin\Debug\netcoreapp1.1\FLVisualization.Models.pdb
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\obj\Debug\netcoreapp1.1\FLVisualization.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\obj\Debug\netcoreapp1.1\FLVisualization.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\obj\Debug\netcoreapp1.1\FLVisualization.DAL.AssemblyInfo.cs
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\obj\Debug\netcoreapp1.1\FLVisualization.DAL.dll
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\obj\Debug\netcoreapp1.1\FLVisualization.DAL.pdb

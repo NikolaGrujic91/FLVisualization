@@ -1,16 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using FLVisualization.Models.Entities.Base;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FLVisualization.Models.Entities
 {
     [Table("Player", Schema = "FLVisualization")]
-    public class Player
+    public class Player : EntityBase
     {
-        [Required]
-        [Key]
-        public int Id { get; }
-
         [Required]
         [DataType(DataType.Text), MaxLength(50)]
         public string FirstName { get; }

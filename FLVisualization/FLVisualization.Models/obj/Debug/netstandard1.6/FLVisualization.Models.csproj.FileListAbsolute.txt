@@ -5,3 +5,11 @@ C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\obj\Debug\netstandard1.6\FLVisualization.Models.AssemblyInfo.cs
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\obj\Debug\netstandard1.6\FLVisualization.Models.dll
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\obj\Debug\netstandard1.6\FLVisualization.Models.pdb
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\bin\Debug\netstandard1.6\FLVisualization.Models.deps.json
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\bin\Debug\netstandard1.6\FLVisualization.Models.dll
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\bin\Debug\netstandard1.6\FLVisualization.Models.pdb
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\obj\Debug\netstandard1.6\FLVisualization.Models.csprojResolveAssemblyReference.cache
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\obj\Debug\netstandard1.6\FLVisualization.Models.csproj.CoreCompileInputs.cache
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\obj\Debug\netstandard1.6\FLVisualization.Models.AssemblyInfo.cs
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\obj\Debug\netstandard1.6\FLVisualization.Models.dll
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\obj\Debug\netstandard1.6\FLVisualization.Models.pdb

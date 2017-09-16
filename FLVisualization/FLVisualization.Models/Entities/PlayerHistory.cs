@@ -1,15 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using FLVisualization.Models.Entities.Base;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FLVisualization.Models.Entities
 {
     [Table("PlayerHistory", Schema = "FLVisualization")]
-    public class PlayerHistory
+    public class PlayerHistory : EntityBase
     {
-        [Required]
-        [Key]
-        public int Id { get; }
-
         [Required]
         [DataType(DataType.Text), MaxLength(20)]
         public string KickoffTimeFormatted { get; }

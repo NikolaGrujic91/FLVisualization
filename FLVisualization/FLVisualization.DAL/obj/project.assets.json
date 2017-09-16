@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "Libuv/1.9.1": {
@@ -2820,10 +2820,10 @@
           "NETStandard.Library": "1.6.1"
         },
         "compile": {
-          "bin/placeholder/netstandard1.6/FLVisualization.Models.dll": {}
+          "bin/placeholder/FLVisualization.Models.dll": {}
         },
         "runtime": {
-          "bin/placeholder/netstandard1.6/FLVisualization.Models.dll": {}
+          "bin/placeholder/FLVisualization.Models.dll": {}
         }
       }
     }
@@ -8174,27 +8174,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nikola\\.nuget\\packages\\": {}
+    "C:\\Users\\Marina\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\FLVisualization.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\FLVisualization.DAL.csproj",
       "projectName": "FLVisualization.DAL",
-      "projectPath": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\FLVisualization.DAL.csproj",
-      "outputPath": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\obj\\",
+      "projectPath": "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\FLVisualization.DAL.csproj",
+      "packagesPath": "C:\\Users\\Marina\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\obj\\",
       "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Marina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
-      "files": {
-        "lib/netcoreapp1.1/FLVisualization.DAL.dll": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\bin\\placeholder\\netcoreapp1.1\\FLVisualization.DAL.dll"
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Marina\\Desktop\\SpyStore.DAL\\nugetpackages": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj": {
-              "projectPath": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj"
+            "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj": {
+              "projectPath": "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj"
             }
           }
         }
@@ -8203,23 +8213,24 @@
     "frameworks": {
       "netcoreapp1.1": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "1.1.2"
-          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "1.1.0"
+          },
+          "Microsoft.EntityFrameworkCore.Tools": {
+            "target": "Package",
+            "version": "1.0.0-msbuild3-final"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "target": "Package",
             "version": "1.1.0"
           },
-          "Microsoft.EntityFrameworkCore.Relational": {
+          "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "1.1.0"
+            "version": "1.1.2",
+            "autoReferenced": true
           },
-          "Microsoft.EntityFrameworkCore.Relational.Design": {
+          "Microsoft.EntityFrameworkCore.Relational": {
             "target": "Package",
             "version": "1.1.0"
           },
@@ -8231,9 +8242,9 @@
             "target": "Package",
             "version": "1.1.0"
           },
-          "Microsoft.EntityFrameworkCore.Tools": {
+          "Microsoft.EntityFrameworkCore.Relational.Design": {
             "target": "Package",
-            "version": "1.0.0-msbuild3-final"
+            "version": "1.1.0"
           }
         }
       }
