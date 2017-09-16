@@ -1,0 +1,7 @@
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\bin\Debug\netstandard1.4\FLVisualization.Models.deps.json
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\bin\Debug\netstandard1.4\FLVisualization.Models.dll
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\bin\Debug\netstandard1.4\FLVisualization.Models.pdb
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\obj\Debug\netstandard1.4\FLVisualization.Models.csprojResolveAssemblyReference.cache
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\obj\Debug\netstandard1.4\FLVisualization.Models.AssemblyInfo.cs
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\obj\Debug\netstandard1.4\FLVisualization.Models.dll
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\obj\Debug\netstandard1.4\FLVisualization.Models.pdb

@@ -1,0 +1,13 @@
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\bin\Debug\netcoreapp1.1\FLVisualization.DAL.Tests.deps.json
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\bin\Debug\netcoreapp1.1\FLVisualization.DAL.Tests.runtimeconfig.json
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\bin\Debug\netcoreapp1.1\FLVisualization.DAL.Tests.runtimeconfig.dev.json
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\bin\Debug\netcoreapp1.1\FLVisualization.DAL.Tests.dll
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\bin\Debug\netcoreapp1.1\FLVisualization.DAL.Tests.pdb
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\obj\Debug\netcoreapp1.1\FLVisualization.DAL.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\obj\Debug\netcoreapp1.1\FLVisualization.DAL.Tests.AssemblyInfo.cs
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\obj\Debug\netcoreapp1.1\FLVisualization.DAL.Tests.dll
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\obj\Debug\netcoreapp1.1\FLVisualization.DAL.Tests.pdb
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\bin\Debug\netcoreapp1.1\FLVisualization.DAL.dll
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\bin\Debug\netcoreapp1.1\FLVisualization.Models.dll
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\bin\Debug\netcoreapp1.1\FLVisualization.DAL.pdb
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\bin\Debug\netcoreapp1.1\FLVisualization.Models.pdb
