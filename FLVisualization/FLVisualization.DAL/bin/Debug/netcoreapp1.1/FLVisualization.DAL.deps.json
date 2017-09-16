@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "1ff79ba744140a3616a4bb55ae0c230cf8dfdafc"
+    "signature": "1f7e31888639be248e07ef4297f805d00071f45f"
   },
   "compilationOptions": {},
   "targets": {
@@ -14,7 +14,8 @@
           "Microsoft.EntityFrameworkCore.Relational": "1.1.0",
           "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
-          "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.0"
+          "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.0",
+          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-msbuild3-final"
         },
         "runtime": {
           "FLVisualization.DAL.dll": {}
@@ -116,6 +117,11 @@
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.dll": {}
+        }
+      },
+      "microsoft.entityframeworkcore.tools/1.0.0-msbuild3-final": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "1.1.0"
         }
       },
       "microsoft.extensions.caching.abstractions/1.1.0": {
@@ -296,6 +302,10 @@
         }
       },
       "flvisualization.models/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "1.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0"
+        },
         "runtime": {
           "FLVisualization.Models.dll": {}
         }
@@ -377,6 +387,13 @@
       "sha512": "sha512-xq27REzgNW5GVG9JLabi5DcRi7VQ/AARBYzTNflwMXi048D5Fm/JPCZTRkVlIy9XpVNAIQ8io1l3GlCu+oQh9w==",
       "path": "microsoft.entityframeworkcore.sqlserver.design/1.1.0",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.design.1.1.0.nupkg.sha512"
+    },
+    "microsoft.entityframeworkcore.tools/1.0.0-msbuild3-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dpVWPliFgNtJn07jHemkEgEz0pzzQwCdWVSpyVW22oWEALBgJZqh7viCQPbsxh4feZqLXiioK0BKZh0NfPsCYQ==",
+      "path": "microsoft.entityframeworkcore.tools/1.0.0-msbuild3-final",
+      "hashPath": "microsoft.entityframeworkcore.tools.1.0.0-msbuild3-final.nupkg.sha512"
     },
     "microsoft.extensions.caching.abstractions/1.1.0": {
       "type": "package",

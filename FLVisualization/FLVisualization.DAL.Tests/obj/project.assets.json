@@ -3467,6 +3467,12 @@
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.0",
           "Microsoft.EntityFrameworkCore.Tools": "1.0.0-msbuild3-final",
           "Microsoft.NETCore.App": "1.1.2"
+        },
+        "compile": {
+          "bin/placeholder/netcoreapp1.1/FLVisualization.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/netcoreapp1.1/FLVisualization.DAL.dll": {}
         }
       },
       "FLVisualization.Models/1.0.0": {
@@ -3476,6 +3482,12 @@
           "Microsoft.EntityFrameworkCore": "1.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
           "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "bin/placeholder/netstandard1.6/FLVisualization.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/netstandard1.6/FLVisualization.Models.dll": {}
         }
       }
     }
@@ -9649,14 +9661,17 @@
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
+      "files": {
+        "lib/netcoreapp1.1/FLVisualization.DAL.Tests.dll": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL.Tests\\bin\\placeholder\\netcoreapp1.1\\FLVisualization.DAL.Tests.dll"
+      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj": {
-              "projectPath": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj"
-            },
             "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\FLVisualization.DAL.csproj": {
               "projectPath": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\FLVisualization.DAL.csproj"
+            },
+            "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj": {
+              "projectPath": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj"
             }
           }
         }
@@ -9665,26 +9680,17 @@
     "frameworks": {
       "netcoreapp1.1": {
         "dependencies": {
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "1.1.2"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "1.1.0"
           },
-          "xunit.runner.visualstudio": {
-            "target": "Package",
-            "version": "2.3.0-beta5-build3769"
-          },
           "Microsoft.EntityFrameworkCore.Design": {
             "target": "Package",
             "version": "1.1.0"
-          },
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "1.1.2",
-            "autoReferenced": true
-          },
-          "xunit": {
-            "target": "Package",
-            "version": "2.3.0-beta5-build3769"
           },
           "Microsoft.EntityFrameworkCore.Relational": {
             "target": "Package",
@@ -9697,6 +9703,14 @@
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "15.0.0-preview-20170125-04"
+          },
+          "xunit": {
+            "target": "Package",
+            "version": "2.3.0-beta5-build3769"
+          },
+          "xunit.runner.visualstudio": {
+            "target": "Package",
+            "version": "2.3.0-beta5-build3769"
           }
         }
       }

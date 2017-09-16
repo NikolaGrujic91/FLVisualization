@@ -6072,6 +6072,9 @@
       "originalTargetFrameworks": [
         "netstandard1.6"
       ],
+      "files": {
+        "lib/netstandard1.6/FLVisualization.Models.dll": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\bin\\placeholder\\netstandard1.6\\FLVisualization.Models.dll"
+      },
       "frameworks": {
         "netstandard1.6": {
           "projectReferences": {}
@@ -6081,14 +6084,13 @@
     "frameworks": {
       "netstandard1.6": {
         "dependencies": {
+          "NETStandard.Library": {
+            "target": "Package",
+            "version": "1.6.1"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "1.1.0"
-          },
-          "NETStandard.Library": {
-            "target": "Package",
-            "version": "1.6.1",
-            "autoReferenced": true
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",

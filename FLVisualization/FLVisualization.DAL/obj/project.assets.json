@@ -2818,6 +2818,12 @@
           "Microsoft.EntityFrameworkCore": "1.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
           "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "bin/placeholder/netstandard1.6/FLVisualization.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/netstandard1.6/FLVisualization.Models.dll": {}
         }
       }
     }
@@ -8181,6 +8187,9 @@
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
+      "files": {
+        "lib/netcoreapp1.1/FLVisualization.DAL.dll": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\bin\\placeholder\\netcoreapp1.1\\FLVisualization.DAL.dll"
+      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
@@ -8194,24 +8203,23 @@
     "frameworks": {
       "netcoreapp1.1": {
         "dependencies": {
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "1.1.2"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "1.1.0"
-          },
-          "Microsoft.EntityFrameworkCore.Tools": {
-            "target": "Package",
-            "version": "1.0.0-msbuild3-final"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "target": "Package",
             "version": "1.1.0"
           },
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "1.1.2",
-            "autoReferenced": true
-          },
           "Microsoft.EntityFrameworkCore.Relational": {
+            "target": "Package",
+            "version": "1.1.0"
+          },
+          "Microsoft.EntityFrameworkCore.Relational.Design": {
             "target": "Package",
             "version": "1.1.0"
           },
@@ -8223,9 +8231,9 @@
             "target": "Package",
             "version": "1.1.0"
           },
-          "Microsoft.EntityFrameworkCore.Relational.Design": {
+          "Microsoft.EntityFrameworkCore.Tools": {
             "target": "Package",
-            "version": "1.1.0"
+            "version": "1.0.0-msbuild3-final"
           }
         }
       }
