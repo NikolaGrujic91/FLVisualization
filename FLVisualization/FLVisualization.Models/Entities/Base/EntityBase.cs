@@ -1,11 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FLVisualization.Models.Entities.Base
 {
     public abstract class EntityBase
     {
-        [Required]
         [Key]
-        public int Id { get; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
     }
 }

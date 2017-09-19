@@ -10,25 +10,23 @@ namespace FLVisualization.Models.Entities
     {
         [Required]
         [DataType(DataType.Text), MaxLength(50)]
-        public string Name { get; }
+        public string Name { get; set; }
 
         [Required]
         [DataType(DataType.Text), MaxLength(10)]
-        public string ShortName { get; }
+        public string ShortName { get; set; }
 
         [Required]
-        public int Win { get; }
+        public int Win { get; set; }
 
         [Required]
-        public int Loss { get; }
+        public int Loss { get; set; }
 
         [Required]
-        public int Draw { get; }
+        public int Draw { get; set; }
 
-        [InverseProperty(nameof(Player))]
         public List<Player> Players { get; set; } = new List<Player>();
 
-        [InverseProperty(nameof(PlayerHistory))]
-        public List<PlayerHistory> History { get; set; } = new List<PlayerHistory>();
+        public List<PlayerHistory> PlayerHistory { get; set; } = new List<PlayerHistory>();
     }
 }

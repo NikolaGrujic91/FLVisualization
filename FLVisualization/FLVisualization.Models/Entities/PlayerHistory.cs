@@ -8,142 +8,136 @@ namespace FLVisualization.Models.Entities
     public class PlayerHistory : EntityBase
     {
         [Required]
-        [DataType(DataType.Text), MaxLength(20)]
-        public string KickoffTimeFormatted { get; }
+        [DataType(DataType.Text), MaxLength(50)]
+        public string KickoffTimeFormatted { get; set; }
 
         [Required]
-        public int TeamHScore { get; }
+        public int TeamHScore { get; set; }
 
         [Required]
-        public int TeamAScore { get; }
+        public int TeamAScore { get; set; }
 
         [Required]
-        public int WasHome { get; }
+        public int WasHome { get; set; }
 
         [Required]
-        public int Value { get; }
+        public int Value { get; set; }
 
         [Required]
-        public int Round { get; }
+        public int Round { get; set; }
 
         [Required]
-        public int TotalPoints { get; }
+        public int TotalPoints { get; set; }
 
         [Required]
-        public int Minutes { get; }
+        public int Minutes { get; set; }
 
         [Required]
-        public int Goals { get; }
+        public int Goals { get; set; }
 
         [Required]
-        public int Assists { get; }
+        public int Assists { get; set; }
 
         [Required]
-        public int CleanSheet { get; }
+        public int CleanSheet { get; set; }
 
         [Required]
-        public int GoalsConceded { get; }
+        public int GoalsConceded { get; set; }
 
         [Required]
-        public int OwnGoals { get; }
+        public int OwnGoals { get; set; }
 
         [Required]
-        public int PenaltiesSaved { get; }
+        public int PenaltiesSaved { get; set; }
 
         [Required]
-        public int PenaltiesMissed { get; }
+        public int PenaltiesMissed { get; set; }
 
         [Required]
-        public int YellowCards { get; }
+        public int YellowCards { get; set; }
 
         [Required]
-        public int RedCards { get; }
+        public int RedCards { get; set; }
 
         [Required]
-        public int Saves { get; }
+        public int Saves { get; set; }
 
         [Required]
-        public int Bonus { get; }
+        public int Bonus { get; set; }
 
         [Required]
-        public int Bps { get; }
+        public int Bps { get; set; }
 
         [Required]
-        public double Influence { get; }
+        public double Influence { get; set; }
 
         [Required]
-        public double Creativity { get; }
+        public double Creativity { get; set; }
 
         [Required]
-        public double Threat { get; }
+        public double Threat { get; set; }
 
         [Required]
-        public double ICTIndex { get; }
+        public double ICTIndex { get; set; }
 
         [Required]
-        public int OpenPlayCrosses { get; }
+        public int OpenPlayCrosses { get; set; }
 
         [Required]
-        public int BigChancesCreated { get; }
+        public int BigChancesCreated { get; set; }
 
         [Required]
-        public int CleareancesBlocksInterceptions { get; }
+        public int CleareancesBlocksInterceptions { get; set; }
 
         [Required]
-        public int Recoveries { get; }
+        public int Recoveries { get; set; }
 
         [Required]
-        public int KeyPasses { get; }
+        public int KeyPasses { get; set; }
 
         [Required]
-        public int Tackles { get; }
+        public int Tackles { get; set; }
 
         [Required]
-        public int WinningGoals { get; }
+        public int WinningGoals { get; set; }
 
         [Required]
-        public int AttemptedPasses { get; }
+        public int AttemptedPasses { get; set; }
 
         [Required]
-        public int CompletedPasses { get; }
+        public int CompletedPasses { get; set; }
 
         [Required]
-        public int PenaltiesConceded { get; }
+        public int PenaltiesConceded { get; set; }
 
         [Required]
-        public int BigChancesMissed { get; }
+        public int BigChancesMissed { get; set; }
 
         [Required]
-        public int ErrorsLeadingToGoal { get; }
+        public int ErrorsLeadingToGoal { get; set; }
 
         [Required]
-        public int ErrorsLeadingToGoalAttempt { get; }
+        public int ErrorsLeadingToGoalAttempt { get; set; }
 
         [Required]
-        public int Tackled { get; }
+        public int Tackled { get; set; }
 
         [Required]
-        public int Offside { get; }
+        public int Offside { get; set; }
 
         [Required]
-        public int TargetMissed { get; }
+        public int TargetMissed { get; set; }
 
         [Required]
-        public int Fouls { get; }
+        public int Fouls { get; set; }
 
         [Required]
-        public int Dribbles { get; }
+        public int Dribbles { get; set; }
 
-        [Required]
         public int PlayerId { get; set; }
-
-        [ForeignKey(nameof(PlayerId))]
         public Player Player { get; set; }
 
-        [Required]
         public int TeamId { get; set; }
-
-        [ForeignKey(nameof(TeamId))]
-        public Team OpponentTeam { get; set; }
+        public Team Team { get; set; }
     }
 }

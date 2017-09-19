@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
 using FLVisualization.Models.Entities;
 
 namespace FLVisualization.DAL.EF

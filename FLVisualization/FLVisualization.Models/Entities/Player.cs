@@ -10,28 +10,21 @@ namespace FLVisualization.Models.Entities
     {
         [Required]
         [DataType(DataType.Text), MaxLength(50)]
-        public string FirstName { get; }
+        public string FirstName { get; set; }
 
         [Required]
         [DataType(DataType.Text), MaxLength(50)]
-        public string LastName { get; }
+        public string LastName { get; set; }
 
         [Required]
-        public int SquadNumber { get; }
+        public int SquadNumber { get; set; }
 
-        [Required]
         public int TeamId { get; set; }
-
-        [ForeignKey(nameof(TeamId))]
         public Team Team { get; set; }
 
-        [Required]
         public int PositionId { get; set; }
-
-        [ForeignKey(nameof(PositionId))]
         public Position Position { get; set; }
 
-        [InverseProperty(nameof(PlayerHistory))]
-        public List<PlayerHistory> History { get; set; } = new List<PlayerHistory>();
+        public List<PlayerHistory> PlayerHistory { get; set; } = new List<PlayerHistory>();
     }
 }

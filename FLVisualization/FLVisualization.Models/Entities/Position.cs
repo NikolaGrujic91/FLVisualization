@@ -10,21 +10,20 @@ namespace FLVisualization.Models.Entities
     {
         [Required]
         [DataType(DataType.Text), MaxLength(50)]
-        public string SingularName { get; }
+        public string SingularName { get; set; }
 
         [Required]
         [DataType(DataType.Text), MaxLength(10)]
-        public string SingularNameShort { get; }
+        public string SingularNameShort { get; set; }
 
         [Required]
         [DataType(DataType.Text), MaxLength(50)]
-        public string PluralName { get; }
+        public string PluralName { get; set; }
 
         [Required]
         [DataType(DataType.Text), MaxLength(10)]
-        public string PluralNameShort { get; }
+        public string PluralNameShort { get; set; }
 
-        [InverseProperty(nameof(Player))]
         public List<Player> Players { get; set; } = new List<Player>();
     }
 }

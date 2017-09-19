@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 2,
   "targets": {
     ".NETStandard,Version=v1.6": {
       "Microsoft.CSharp/4.3.0": {
@@ -6059,32 +6059,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Marina\\.nuget\\packages\\": {}
+    "C:\\Users\\Nikola\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj",
+      "projectUniqueName": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj",
       "projectName": "FLVisualization.Models",
-      "projectPath": "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj",
-      "packagesPath": "C:\\Users\\Marina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\obj\\",
+      "projectPath": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj",
+      "outputPath": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\obj\\",
       "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\Marina\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-      ],
       "originalTargetFrameworks": [
         "netstandard1.6"
       ],
-      "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\Marina\\Desktop\\SpyStore.DAL\\nugetpackages": {},
-        "https://api.nuget.org/v3/index.json": {}
-      },
       "frameworks": {
         "netstandard1.6": {
           "projectReferences": {}

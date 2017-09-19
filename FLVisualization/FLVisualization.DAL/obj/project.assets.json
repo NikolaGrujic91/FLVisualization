@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "Libuv/1.9.1": {
@@ -2818,12 +2818,6 @@
           "Microsoft.EntityFrameworkCore": "1.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
           "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "bin/placeholder/FLVisualization.Models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FLVisualization.Models.dll": {}
         }
       }
     }
@@ -8174,37 +8168,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Marina\\.nuget\\packages\\": {}
+    "C:\\Users\\Nikola\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\FLVisualization.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\FLVisualization.DAL.csproj",
       "projectName": "FLVisualization.DAL",
-      "projectPath": "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\FLVisualization.DAL.csproj",
-      "packagesPath": "C:\\Users\\Marina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\obj\\",
+      "projectPath": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\FLVisualization.DAL.csproj",
+      "outputPath": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\obj\\",
       "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\Marina\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-      ],
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
-      "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\Marina\\Desktop\\SpyStore.DAL\\nugetpackages": {},
-        "https://api.nuget.org/v3/index.json": {}
-      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj": {
-              "projectPath": "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj"
+            "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj": {
+              "projectPath": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj"
             }
           }
         }
