@@ -46,56 +46,61 @@ namespace FLVisualization.DAL.Tests.ContextTests
             db.SaveChanges();
         }
 
+        PlayerHistory Instantiate(int playerId)
+        {
+            return new PlayerHistory()
+            {
+                KickoffTimeFormatted = "20-09-2017",
+                TeamHScore = 0,
+                TeamAScore = 0,
+                WasHome = 0,
+                Value = 0,
+                Round = 0,
+                TotalPoints = 0,
+                Minutes = 0,
+                Goals = 0,
+                Assists = 0,
+                CleanSheet = 0,
+                GoalsConceded = 0,
+                OwnGoals = 0,
+                PenaltiesSaved = 0,
+                PenaltiesMissed = 0,
+                YellowCards = 0,
+                RedCards = 0,
+                Saves = 0,
+                Bonus = 0,
+                Bps = 0,
+                Influence = 0,
+                Creativity = 0,
+                Threat = 0,
+                ICTIndex = 0,
+                OpenPlayCrosses = 0,
+                BigChancesCreated = 0,
+                CleareancesBlocksInterceptions = 0,
+                Recoveries = 0,
+                KeyPasses = 0,
+                Tackles = 0,
+                WinningGoals = 0,
+                AttemptedPasses = 0,
+                CompletedPasses = 0,
+                PenaltiesConceded = 0,
+                BigChancesMissed = 0,
+                ErrorsLeadingToGoal = 0,
+                ErrorsLeadingToGoalAttempt = 0,
+                Tackled = 0,
+                Offside = 0,
+                TargetMissed = 0,
+                Fouls = 0,
+                Dribbles = 0,
+                PlayerId = playerId,
+                TeamId = 1
+            };
+        }
+
         [Fact]
         public void AddPlayerHistory()
         {
-            var playerHistory = new PlayerHistory()
-                                        {
-                                            KickoffTimeFormatted = "20-09-2017",
-                                            TeamHScore = 0,
-                                            TeamAScore = 0,
-                                            WasHome = 0,
-                                            Value = 0,
-                                            Round = 0,
-                                            TotalPoints = 0,
-                                            Minutes = 0,
-                                            Goals = 0,
-                                            Assists = 0,
-                                            CleanSheet = 0,
-                                            GoalsConceded = 0,
-                                            OwnGoals = 0,
-                                            PenaltiesSaved = 0,
-                                            PenaltiesMissed = 0,
-                                            YellowCards = 0,
-                                            RedCards = 0,
-                                            Saves = 0,
-                                            Bonus = 0,
-                                            Bps = 0,
-                                            Influence = 0,
-                                            Creativity = 0,
-                                            Threat = 0,
-                                            ICTIndex = 0,
-                                            OpenPlayCrosses = 0,
-                                            BigChancesCreated = 0,
-                                            CleareancesBlocksInterceptions = 0,
-                                            Recoveries = 0,
-                                            KeyPasses = 0,
-                                            Tackles = 0,
-                                            WinningGoals = 0,
-                                            AttemptedPasses = 0,
-                                            CompletedPasses = 0,
-                                            PenaltiesConceded = 0,
-                                            BigChancesMissed = 0,
-                                            ErrorsLeadingToGoal = 0,
-                                            ErrorsLeadingToGoalAttempt = 0,
-                                            Tackled = 0,
-                                            Offside = 0,
-                                            TargetMissed = 0,
-                                            Fouls = 0,
-                                            Dribbles = 0,
-                                            PlayerId = 1,
-                                            TeamId = 1
-                                        };
+            var playerHistory = Instantiate(1);
             db.History.Add(playerHistory);
             Assert.Equal(EntityState.Added, db.Entry(playerHistory).State);
             Assert.True(playerHistory.Id < 0);
@@ -108,102 +113,8 @@ namespace FLVisualization.DAL.Tests.ContextTests
         [Fact]
         public void GetAllHistoryOrderedByPlayerId()
         {
-            var playerHistory = new PlayerHistory()
-            {
-                KickoffTimeFormatted = "20-09-2017",
-                TeamHScore = 0,
-                TeamAScore = 0,
-                WasHome = 0,
-                Value = 0,
-                Round = 0,
-                TotalPoints = 0,
-                Minutes = 0,
-                Goals = 0,
-                Assists = 0,
-                CleanSheet = 0,
-                GoalsConceded = 0,
-                OwnGoals = 0,
-                PenaltiesSaved = 0,
-                PenaltiesMissed = 0,
-                YellowCards = 0,
-                RedCards = 0,
-                Saves = 0,
-                Bonus = 0,
-                Bps = 0,
-                Influence = 0,
-                Creativity = 0,
-                Threat = 0,
-                ICTIndex = 0,
-                OpenPlayCrosses = 0,
-                BigChancesCreated = 0,
-                CleareancesBlocksInterceptions = 0,
-                Recoveries = 0,
-                KeyPasses = 0,
-                Tackles = 0,
-                WinningGoals = 0,
-                AttemptedPasses = 0,
-                CompletedPasses = 0,
-                PenaltiesConceded = 0,
-                BigChancesMissed = 0,
-                ErrorsLeadingToGoal = 0,
-                ErrorsLeadingToGoalAttempt = 0,
-                Tackled = 0,
-                Offside = 0,
-                TargetMissed = 0,
-                Fouls = 0,
-                Dribbles = 0,
-                PlayerId = 1,
-                TeamId = 1
-            };
-
-            var playerHistory2 = new PlayerHistory()
-            {
-                KickoffTimeFormatted = "20-09-2017",
-                TeamHScore = 0,
-                TeamAScore = 0,
-                WasHome = 0,
-                Value = 0,
-                Round = 0,
-                TotalPoints = 0,
-                Minutes = 0,
-                Goals = 0,
-                Assists = 0,
-                CleanSheet = 0,
-                GoalsConceded = 0,
-                OwnGoals = 0,
-                PenaltiesSaved = 0,
-                PenaltiesMissed = 0,
-                YellowCards = 0,
-                RedCards = 0,
-                Saves = 0,
-                Bonus = 0,
-                Bps = 0,
-                Influence = 0,
-                Creativity = 0,
-                Threat = 0,
-                ICTIndex = 0,
-                OpenPlayCrosses = 0,
-                BigChancesCreated = 0,
-                CleareancesBlocksInterceptions = 0,
-                Recoveries = 0,
-                KeyPasses = 0,
-                Tackles = 0,
-                WinningGoals = 0,
-                AttemptedPasses = 0,
-                CompletedPasses = 0,
-                PenaltiesConceded = 0,
-                BigChancesMissed = 0,
-                ErrorsLeadingToGoal = 0,
-                ErrorsLeadingToGoalAttempt = 0,
-                Tackled = 0,
-                Offside = 0,
-                TargetMissed = 0,
-                Fouls = 0,
-                Dribbles = 0,
-                PlayerId = 2,
-                TeamId = 1
-            };
-
+            var playerHistory = Instantiate(1);
+            var playerHistory2 = Instantiate(2);
             db.History.Add(playerHistory);
             db.History.Add(playerHistory2);
             db.SaveChanges();
@@ -217,54 +128,7 @@ namespace FLVisualization.DAL.Tests.ContextTests
         [Fact]
         public void UpdatePlayerHistory()
         {
-            var playerHistory = new PlayerHistory()
-            {
-                KickoffTimeFormatted = "20-09-2017",
-                TeamHScore = 0,
-                TeamAScore = 0,
-                WasHome = 0,
-                Value = 0,
-                Round = 0,
-                TotalPoints = 0,
-                Minutes = 0,
-                Goals = 0,
-                Assists = 0,
-                CleanSheet = 0,
-                GoalsConceded = 0,
-                OwnGoals = 0,
-                PenaltiesSaved = 0,
-                PenaltiesMissed = 0,
-                YellowCards = 0,
-                RedCards = 0,
-                Saves = 0,
-                Bonus = 0,
-                Bps = 0,
-                Influence = 0,
-                Creativity = 0,
-                Threat = 0,
-                ICTIndex = 0,
-                OpenPlayCrosses = 0,
-                BigChancesCreated = 0,
-                CleareancesBlocksInterceptions = 0,
-                Recoveries = 0,
-                KeyPasses = 0,
-                Tackles = 0,
-                WinningGoals = 0,
-                AttemptedPasses = 0,
-                CompletedPasses = 0,
-                PenaltiesConceded = 0,
-                BigChancesMissed = 0,
-                ErrorsLeadingToGoal = 0,
-                ErrorsLeadingToGoalAttempt = 0,
-                Tackled = 0,
-                Offside = 0,
-                TargetMissed = 0,
-                Fouls = 0,
-                Dribbles = 0,
-                PlayerId = 1,
-                TeamId = 1
-            };
-
+            var playerHistory = Instantiate(1);
             db.History.Add(playerHistory);
             db.SaveChanges();
             playerHistory.TeamHScore = 3;
@@ -282,54 +146,7 @@ namespace FLVisualization.DAL.Tests.ContextTests
         [Fact]
         public void DeletePlayerHistory()
         {
-            var playerHistory = new PlayerHistory()
-            {
-                KickoffTimeFormatted = "20-09-2017",
-                TeamHScore = 0,
-                TeamAScore = 0,
-                WasHome = 0,
-                Value = 0,
-                Round = 0,
-                TotalPoints = 0,
-                Minutes = 0,
-                Goals = 0,
-                Assists = 0,
-                CleanSheet = 0,
-                GoalsConceded = 0,
-                OwnGoals = 0,
-                PenaltiesSaved = 0,
-                PenaltiesMissed = 0,
-                YellowCards = 0,
-                RedCards = 0,
-                Saves = 0,
-                Bonus = 0,
-                Bps = 0,
-                Influence = 0,
-                Creativity = 0,
-                Threat = 0,
-                ICTIndex = 0,
-                OpenPlayCrosses = 0,
-                BigChancesCreated = 0,
-                CleareancesBlocksInterceptions = 0,
-                Recoveries = 0,
-                KeyPasses = 0,
-                Tackles = 0,
-                WinningGoals = 0,
-                AttemptedPasses = 0,
-                CompletedPasses = 0,
-                PenaltiesConceded = 0,
-                BigChancesMissed = 0,
-                ErrorsLeadingToGoal = 0,
-                ErrorsLeadingToGoalAttempt = 0,
-                Tackled = 0,
-                Offside = 0,
-                TargetMissed = 0,
-                Fouls = 0,
-                Dribbles = 0,
-                PlayerId = 1,
-                TeamId = 1
-            };
-
+            var playerHistory = Instantiate(1);
             db.History.Add(playerHistory);
             db.SaveChanges();
             Assert.Equal(1, db.History.Count());
