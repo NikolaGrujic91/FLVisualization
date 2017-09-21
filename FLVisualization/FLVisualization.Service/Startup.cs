@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,12 +9,14 @@ using Newtonsoft.Json.Serialization;
 using FLVisualization.DAL.EF;
 using FLVisualization.DAL.Repos;
 using FLVisualization.DAL.Repos.Interfaces;
-
+using FLVisualization.Service.Filters;
 
 namespace FLVisualization.Service
 {
     public class Startup
     {
+        private IHostingEnvironment env;
+
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
@@ -27,6 +25,8 @@ namespace FLVisualization.Service
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+
+            this.env = env;
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -35,7 +35,8 @@ namespace FLVisualization.Service
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddMvcCore()
+            services.AddMvcCore(
+                config => config.Filters.Add(new FLVisualizationExceptionFilter(this.env.IsDevelopment())))
                 .AddJsonFormatters(j =>
                 {
                     j.ContractResolver = new DefaultContractResolver(); // To Pascal Casing
