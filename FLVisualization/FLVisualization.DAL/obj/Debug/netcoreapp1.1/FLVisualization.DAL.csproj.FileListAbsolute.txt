@@ -21,3 +21,4 @@ C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\obj\Debug\netcoreapp1.1\FLVisualization.DAL.AssemblyInfo.cs
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\obj\Debug\netcoreapp1.1\FLVisualization.DAL.dll
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\obj\Debug\netcoreapp1.1\FLVisualization.DAL.pdb
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\obj\Debug\netcoreapp1.1\FLVisualization.DAL.csproj.CoreCompileInputs.cache

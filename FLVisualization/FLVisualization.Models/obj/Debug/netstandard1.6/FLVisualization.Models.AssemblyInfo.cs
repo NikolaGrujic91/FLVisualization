@@ -11,9 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("FLVisualization.Models")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Nikola Grujic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("Package Description")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright 2017 (c) Nikola Grujic. All rights reserved.")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Models for the FLVisualization Data Access Library")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("FLVisualization.Models")]

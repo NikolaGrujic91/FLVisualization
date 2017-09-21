@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "Libuv/1.9.1": {
@@ -2928,6 +2928,12 @@
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.0",
           "Microsoft.EntityFrameworkCore.Tools": "1.0.0-msbuild3-final",
           "Microsoft.NETCore.App": "1.1.2"
+        },
+        "compile": {
+          "bin/placeholder/FLVisualization.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FLVisualization.DAL.dll": {}
         }
       },
       "FLVisualization.Models/1.0.0": {
@@ -2937,6 +2943,12 @@
           "Microsoft.EntityFrameworkCore": "1.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
           "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "bin/placeholder/FLVisualization.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FLVisualization.Models.dll": {}
         }
       }
     }
@@ -8541,15 +8553,28 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Populate\\FLVisualization.Populate.csproj",
       "projectName": "FLVisualization.Populate",
       "projectPath": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Populate\\FLVisualization.Populate.csproj",
+      "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Populate\\obj\\",
       "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Nikola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\nugetpackages": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {

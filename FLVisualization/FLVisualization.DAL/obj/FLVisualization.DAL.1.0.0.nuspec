@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>FLVisualization.DAL</id>
+    <version>1.0.0</version>
+    <authors>Nikola Grujic</authors>
+    <owners>Nikola Grujic</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>FLVisualization Data Access Library</description>
+    <releaseNotes>Initial Release</releaseNotes>
+    <copyright>Copyright 2017 (c) Nikola Grujic. All rights reserved.</copyright>
+    <tags>FLVisualization DAL</tags>
+    <dependencies>
+      <group targetFramework=".NETCoreApp1.1">
+        <dependency id="FLVisualization.Models" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Tools" version="1.0.0-msbuild3-final" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Design" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.NETCore.App" version="1.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Relational" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer.Design" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Relational.Design" version="1.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\bin\Debug\netcoreapp1.1\FLVisualization.DAL.runtimeconfig.json" target="lib\netcoreapp1.1\FLVisualization.DAL.runtimeconfig.json" />
+    <file src="C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL\bin\Debug\netcoreapp1.1\FLVisualization.DAL.dll" target="lib\netcoreapp1.1\FLVisualization.DAL.dll" />
+  </files>
+</package>

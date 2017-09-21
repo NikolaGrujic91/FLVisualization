@@ -241,3 +241,4 @@ C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\obj\Debug\netcoreapp1.1\FLVisualization.DAL.Tests.AssemblyInfo.cs
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\obj\Debug\netcoreapp1.1\FLVisualization.DAL.Tests.dll
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\obj\Debug\netcoreapp1.1\FLVisualization.DAL.Tests.pdb
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.DAL.Tests\obj\Debug\netcoreapp1.1\FLVisualization.DAL.Tests.csproj.CoreCompileInputs.cache

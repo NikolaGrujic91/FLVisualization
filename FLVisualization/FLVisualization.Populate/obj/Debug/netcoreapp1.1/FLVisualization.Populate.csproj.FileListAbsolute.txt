@@ -25,3 +25,4 @@ C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Populate\obj\Debug\netcoreapp1.1\FLVisualization.Populate.AssemblyInfo.cs
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Populate\obj\Debug\netcoreapp1.1\FLVisualization.Populate.dll
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Populate\obj\Debug\netcoreapp1.1\FLVisualization.Populate.pdb
+C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Populate\obj\Debug\netcoreapp1.1\FLVisualization.Populate.csproj.CoreCompileInputs.cache
