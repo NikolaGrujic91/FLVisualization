@@ -6059,7 +6059,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nikola\\.nuget\\packages\\": {}
+    "C:\\Users\\Marina\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -6067,14 +6067,14 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj",
+      "projectUniqueName": "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj",
       "projectName": "FLVisualization.Models",
-      "projectPath": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj",
-      "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\obj\\",
+      "projectPath": "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj",
+      "packagesPath": "C:\\Users\\Marina\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Nikola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Marina\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6082,7 +6082,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\Nikola\\Documents\\GitHub\\FLVisualization\\FLVisualization\\nugetpackages": {},
+        "C:\\Users\\Marina\\Desktop\\SpyStore.DAL\\nugetpackages": {},
+        "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\nugetpackages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

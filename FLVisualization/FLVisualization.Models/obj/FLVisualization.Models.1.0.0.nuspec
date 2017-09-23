@@ -19,6 +19,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\bin\Debug\netstandard1.6\FLVisualization.Models.dll" target="lib\netstandard1.6\FLVisualization.Models.dll" />
+    <file src="C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Models\bin\Debug\netstandard1.6\FLVisualization.Models.dll" target="lib\netstandard1.6\FLVisualization.Models.dll" />
   </files>
 </package>

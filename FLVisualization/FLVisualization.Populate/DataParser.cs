@@ -108,9 +108,13 @@ namespace FLVisualization.Populate
                                     var histories = jsonHistory.history_summary;
                                     foreach (var history in histories)
                                     {
+                                        var team_h_score = history.team_h_score;
+                                        if (team_h_score == null)
+                                            break;
+
                                         Console.WriteLine($"{history.id} {history.kickoff_time_formatted} {history.team_h_score} {history.team_a_score} {history.was_home} {history.value} {history.round}");
 
-                                        context.History.Add(new PlayerHistory()
+                                        var playerHistory = new PlayerHistory()
                                         {
                                             Id = history.id,
                                             KickoffTimeFormatted = history.kickoff_time_formatted,
@@ -156,8 +160,11 @@ namespace FLVisualization.Populate
                                             Fouls = history.fouls,
                                             Dribbles = history.dribbles,
                                             PlayerId = history.element,
-                                            TeamId = history.opponent_team
-                                        });
+                                            OpponentId = history.opponent_team                             
+                                        };
+
+                                        playerHistory.Team = context.Teams.Find(playerHistory.OpponentId);
+                                        context.History.Add(playerHistory);
                                     }
                                     SaveChanges(context, "PlayerHistory");
                                 }

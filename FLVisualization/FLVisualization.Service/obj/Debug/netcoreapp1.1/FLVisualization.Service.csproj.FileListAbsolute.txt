@@ -8,3 +8,12 @@ C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\obj\Debug\netcoreapp1.1\FLVisualization.Service.AssemblyInfo.cs
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\obj\Debug\netcoreapp1.1\FLVisualization.Service.dll
 C:\Users\Nikola\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\obj\Debug\netcoreapp1.1\FLVisualization.Service.pdb
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\bin\Debug\netcoreapp1.1\FLVisualization.Service.deps.json
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\bin\Debug\netcoreapp1.1\FLVisualization.Service.runtimeconfig.json
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\bin\Debug\netcoreapp1.1\FLVisualization.Service.runtimeconfig.dev.json
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\obj\Debug\netcoreapp1.1\FLVisualization.Service.csproj.CoreCompileInputs.cache
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\obj\Debug\netcoreapp1.1\FLVisualization.Service.AssemblyInfo.cs
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\obj\Debug\netcoreapp1.1\FLVisualization.Service.dll
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\obj\Debug\netcoreapp1.1\FLVisualization.Service.pdb
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\bin\Debug\netcoreapp1.1\FLVisualization.Service.dll
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\bin\Debug\netcoreapp1.1\FLVisualization.Service.pdb

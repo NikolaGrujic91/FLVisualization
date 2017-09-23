@@ -93,7 +93,7 @@ namespace FLVisualization.DAL.Tests.ContextTests
                 Fouls = 0,
                 Dribbles = 0,
                 PlayerId = playerId,
-                TeamId = 1
+                OpponentId = 1
             };
         }
 
