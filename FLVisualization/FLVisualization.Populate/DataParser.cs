@@ -105,14 +105,14 @@ namespace FLVisualization.Populate
                                     string responseHistoryBody = await responseHistory.Content.ReadAsStringAsync();
                                     dynamic jsonHistory = JsonConvert.DeserializeObject(responseHistoryBody);
 
-                                    var histories = jsonHistory.history_summary;
+                                    var histories = jsonHistory.history;
                                     foreach (var history in histories)
                                     {
                                         var team_h_score = history.team_h_score;
                                         if (team_h_score == null)
                                             break;
 
-                                        Console.WriteLine($"{history.id} {history.kickoff_time_formatted} {history.team_h_score} {history.team_a_score} {history.was_home} {history.value} {history.round}");
+                                        Console.WriteLine($"    {history.id} {history.kickoff_time_formatted} {history.team_h_score} {history.team_a_score} {history.was_home} {history.value} {history.round}");
 
                                         var playerHistory = new PlayerHistory()
                                         {
