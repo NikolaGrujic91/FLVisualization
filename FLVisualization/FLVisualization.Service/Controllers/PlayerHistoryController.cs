@@ -24,7 +24,7 @@ namespace FLVisualization.Service.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var item = Repo.FindPlayerHistory(id);
+            var item = Repo.Find(id);
 
             if (item == null)
                 return NotFound();
