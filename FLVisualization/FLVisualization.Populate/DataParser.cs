@@ -50,7 +50,8 @@ namespace FLVisualization.Populate
                                 ShortName = team.short_name,
                                 Win = team.win,
                                 Draw = team.draw,
-                                Loss = team.loss
+                                Loss = team.loss,
+                                ImageURL = ClubLogoUrl(team.id)
                             });
                         }
                         SaveChanges(context, "Team");
@@ -83,7 +84,7 @@ namespace FLVisualization.Populate
                         {
                             Console.WriteLine($"{player.id} {player.first_name } {player.second_name} {player.squad_number} {player.team} {player.element_type}");
 
-                            string imageUrl = CreateImageUrl(player.photo);
+                            string imageUrl = CreatePlayerImageUrl(player.photo);
                             Player newPlayer = new Player()
                             {
                                 Id = player.id,
@@ -217,13 +218,62 @@ namespace FLVisualization.Populate
             context.Database.ExecuteSqlCommand($"SET IDENTITY_INSERT FLVisualization.{tableName} OFF;");
         }
 
-        private static string CreateImageUrl(dynamic imageName)
+        private static string CreatePlayerImageUrl(dynamic imageName)
         {
             string urlPrefix = "https://platform-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p";
             string urlSufix = ".png";
             string[] list = ((string)imageName).Split('.');
 
             return $"{urlPrefix}{list[0]}{urlSufix}";
+        }
+
+        private static string ClubLogoUrl(dynamic teamId)
+        {
+            switch(Convert.ToInt32(teamId.Value))
+            {
+                case 1: //Arsenal
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/180px-Arsenal_FC.svg.png";
+                case 2: //Bournemouth
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/AFC_Bournemouth_%282013%29.svg/170px-AFC_Bournemouth_%282013%29.svg.png";
+                case 3: //Brighton
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Brighton_%26_Hove_Albion_logo.svg/200px-Brighton_%26_Hove_Albion_logo.svg.png";
+                case 4: //Burnley
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Burnley_FC_badge.png/200px-Burnley_FC_badge.png";
+                case 5: //Chelsea
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/200px-Chelsea_FC.svg.png";
+                case 6: //Crystal Palace
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Crystal_Palace_FC_logo.svg/170px-Crystal_Palace_FC_logo.svg.png";
+                case 7: //Everton
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/220px-Everton_FC_logo.svg.png";
+                case 8: //Huddersfield
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Huddersfield_Town_A.F.C._logo.svg/150px-Huddersfield_Town_A.F.C._logo.svg.png";
+                case 9: //Leicester
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Leicester_City_crest.svg/220px-Leicester_City_crest.svg.png";
+                case 10: //Liverpool
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/170px-Liverpool_FC.svg.png";
+                case 11: //Man City
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/200px-Manchester_City_FC_badge.svg.png";
+                case 12: //Man Utd
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/220px-Manchester_United_FC_crest.svg.png";
+                case 13: //Newcastle
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Newcastle_United_Logo.svg/200px-Newcastle_United_Logo.svg.png";
+                case 14: //Southampton
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/FC_Southampton.svg/180px-FC_Southampton.svg.png";
+                case 15: //Stoke
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Stoke_City_FC.svg/220px-Stoke_City_FC.svg.png";
+                case 16: //Swansea
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Swansea_City_AFC_logo.svg/220px-Swansea_City_AFC_logo.svg.png";
+                case 17: //Spurs
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/125px-Tottenham_Hotspur.svg.png";
+                case 18: //Watford
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Watford.svg/185px-Watford.svg.png";
+                case 19: //West Brom
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/West_Bromwich_Albion.svg/160px-West_Bromwich_Albion.svg.png";
+                case 20: //West Ham
+                    return "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/West_Ham_United_FC_logo.svg/185px-West_Ham_United_FC_logo.svg.png";
+                default:
+                    return string.Empty;
+            }
         }
     }
 }

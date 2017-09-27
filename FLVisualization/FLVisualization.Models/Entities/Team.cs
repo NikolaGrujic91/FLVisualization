@@ -25,6 +25,9 @@ namespace FLVisualization.Models.Entities
         [Required]
         public int Draw { get; set; }
 
+        [Required]
+        public string ImageURL { get; set; }
+
         public List<Player> Players { get; set; } = new List<Player>();
 
         public List<PlayerHistory> PlayerHistory { get; set; } = new List<PlayerHistory>();
