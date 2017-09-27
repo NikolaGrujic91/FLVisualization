@@ -19,6 +19,9 @@ namespace FLVisualization.Models.Entities
         [Required]
         public int SquadNumber { get; set; }
 
+        [Required]
+        public string ImageURL { get; set; }
+
         public int TeamId { get; set; }
         public Team Team { get; set; }
 

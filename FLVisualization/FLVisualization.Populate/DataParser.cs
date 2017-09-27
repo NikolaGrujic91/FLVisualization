@@ -83,6 +83,7 @@ namespace FLVisualization.Populate
                         {
                             Console.WriteLine($"{player.id} {player.first_name } {player.second_name} {player.squad_number} {player.team} {player.element_type}");
 
+                            string imageUrl = CreateImageUrl(player.photo);
                             Player newPlayer = new Player()
                             {
                                 Id = player.id,
@@ -90,7 +91,8 @@ namespace FLVisualization.Populate
                                 LastName = player.second_name,
                                 SquadNumber = player.squad_number == null ? -1 : player.squad_number,
                                 TeamId = player.team,
-                                PositionId = player.element_type
+                                PositionId = player.element_type,
+                                ImageURL = imageUrl
                             };
 
                             newPlayer.Position = context.Positions.Find(newPlayer.PositionId);
@@ -213,6 +215,15 @@ namespace FLVisualization.Populate
             context.Database.ExecuteSqlCommand($"SET IDENTITY_INSERT FLVisualization.{tableName} ON;");
             context.SaveChanges();
             context.Database.ExecuteSqlCommand($"SET IDENTITY_INSERT FLVisualization.{tableName} OFF;");
+        }
+
+        private static string CreateImageUrl(dynamic imageName)
+        {
+            string urlPrefix = "https://platform-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p";
+            string urlSufix = ".png";
+            string[] list = ((string)imageName).Split('.');
+
+            return $"{urlPrefix}{list[0]}{urlSufix}";
         }
     }
 }
