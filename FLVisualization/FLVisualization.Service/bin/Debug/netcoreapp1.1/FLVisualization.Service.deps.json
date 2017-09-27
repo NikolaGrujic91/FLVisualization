@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "8e08255b9938e9a61ca8c69a3f9477ded13985b9"
+    "signature": "f1df568b992da046061ecff32dfa3174443663cd"
   },
   "compilationOptions": {
     "defines": [
@@ -39,38 +39,6 @@
         },
         "compile": {
           "FLVisualization.Service.dll": {}
-        }
-      },
-      "flvisualization.dal/1.0.0": {
-        "dependencies": {
-          "FLVisualization.Models": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Design": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Relational": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
-          "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-msbuild3-final",
-          "Microsoft.NETCore.App": "1.1.2"
-        },
-        "runtime": {
-          "lib/netcoreapp1.1/FLVisualization.DAL.dll": {}
-        },
-        "compile": {
-          "lib/netcoreapp1.1/FLVisualization.DAL.dll": {}
-        }
-      },
-      "flvisualization.models/1.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "1.1.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
-          "NETStandard.Library": "1.6.1"
-        },
-        "runtime": {
-          "lib/netstandard1.6/FLVisualization.Models.dll": {}
-        },
-        "compile": {
-          "lib/netstandard1.6/FLVisualization.Models.dll": {}
         }
       },
       "microsoft.applicationinsights/2.2.0": {
@@ -1632,6 +1600,39 @@
         },
         "compile": {
           "ref/netstandard1.3/System.Xml.XmlDocument.dll": {}
+        }
+      },
+      "flvisualization.dal/1.0.0": {
+        "dependencies": {
+          "FLVisualization.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "1.1.0",
+          "Microsoft.EntityFrameworkCore.Design": "1.1.0",
+          "Microsoft.EntityFrameworkCore.Relational": "1.1.0",
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.0",
+          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-msbuild3-final",
+          "Microsoft.NETCore.App": "1.1.2"
+        },
+        "runtime": {
+          "FLVisualization.DAL.dll": {}
+        },
+        "compile": {
+          "FLVisualization.DAL.dll": {}
+        }
+      },
+      "flvisualization.models/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "1.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "runtime": {
+          "FLVisualization.Models.dll": {}
+        },
+        "compile": {
+          "FLVisualization.Models.dll": {}
         }
       },
       "libuv/1.9.1": {
@@ -3280,20 +3281,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "flvisualization.dal/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Y3Fc8WDKW40ZCRLlWQaoRnKeQs7CwjOicpUpM37Nolhu3Rd5QBsYY1Xa3ZSDTyE/yPKqok8cnwezc/SPReIeLQ==",
-      "path": "flvisualization.dal/1.0.0",
-      "hashPath": "flvisualization.dal.1.0.0.nupkg.sha512"
-    },
-    "flvisualization.models/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-hNl+6k9HlWX/+DpC2UFxs1x/83VcgsGwZaIm6fxlNOL4wg0VTQYFYDQbQJY6WZ7gk8V3zowySO3E15iJ3cSyJg==",
-      "path": "flvisualization.models/1.0.0",
-      "hashPath": "flvisualization.models.1.0.0.nupkg.sha512"
-    },
     "microsoft.applicationinsights/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -4007,6 +3994,16 @@
       "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "flvisualization.dal/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "flvisualization.models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "libuv/1.9.1": {
       "type": "package",

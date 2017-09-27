@@ -9,8 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FLVisualization.DAL" Version="1.0.0" />
-    <PackageReference Include="FLVisualization.Models" Version="1.0.0" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
@@ -22,6 +20,11 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FLVisualization.DAL\FLVisualization.DAL.csproj" />
+    <ProjectReference Include="..\FLVisualization.Models\FLVisualization.Models.csproj" />
   </ItemGroup>
 
 </Project>

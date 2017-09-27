@@ -82,7 +82,8 @@ namespace FLVisualization.Populate
                         foreach (var player in players)
                         {
                             Console.WriteLine($"{player.id} {player.first_name } {player.second_name} {player.squad_number} {player.team} {player.element_type}");
-                            context.Players.Add(new Player()
+
+                            Player newPlayer = new Player()
                             {
                                 Id = player.id,
                                 FirstName = player.first_name,
@@ -90,7 +91,11 @@ namespace FLVisualization.Populate
                                 SquadNumber = player.squad_number == null ? -1 : player.squad_number,
                                 TeamId = player.team,
                                 PositionId = player.element_type
-                            });
+                            };
+
+                            newPlayer.Position = context.Positions.Find(newPlayer.PositionId);
+                            newPlayer.Team = context.Teams.Find(newPlayer.TeamId);
+                            context.Players.Add(newPlayer);
                             SaveChanges(context, "Player");
 
                             #region Load Player History
@@ -160,7 +165,7 @@ namespace FLVisualization.Populate
                                             Fouls = history.fouls,
                                             Dribbles = history.dribbles,
                                             PlayerId = history.element,
-                                            OpponentId = history.opponent_team                             
+                                            OpponentId = history.opponent_team
                                         };
 
                                         playerHistory.Team = context.Teams.Find(playerHistory.OpponentId);

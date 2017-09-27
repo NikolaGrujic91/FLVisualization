@@ -18,3 +18,7 @@ C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization
 C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\bin\Debug\netcoreapp1.1\FLVisualization.Service.dll
 C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\bin\Debug\netcoreapp1.1\FLVisualization.Service.pdb
 C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\obj\Debug\netcoreapp1.1\FLVisualization.Service.csprojResolveAssemblyReference.cache
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\bin\Debug\netcoreapp1.1\FLVisualization.DAL.dll
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\bin\Debug\netcoreapp1.1\FLVisualization.Models.dll
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\bin\Debug\netcoreapp1.1\FLVisualization.DAL.pdb
+C:\Users\Marina\Documents\GitHub\FLVisualization\FLVisualization\FLVisualization.Service\bin\Debug\netcoreapp1.1\FLVisualization.Models.pdb

@@ -23,5 +23,7 @@ namespace FLVisualization.DAL.Repos
         public override IEnumerable<Player> GetAll() => table.OrderBy(t => t.Id);
 
         public override IEnumerable<Player> GetRange(int skip, int take) => GetRange(table.OrderBy(t => t.Id), skip, take);
+
+        public IEnumerable<Player> FindPlayersByTeam(int teamId) => table.Where(p => p.TeamId == teamId).ToList();
     }
 }

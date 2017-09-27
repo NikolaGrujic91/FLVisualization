@@ -366,7 +366,8 @@
       "flvisualization.models/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "1.1.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
+          "Newtonsoft.Json": "10.0.3"
         },
         "runtime": {
           "FLVisualization.Models.dll": {}

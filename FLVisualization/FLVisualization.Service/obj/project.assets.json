@@ -2,40 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
-      "FLVisualization.DAL/1.0.0": {
-        "type": "package",
-        "dependencies": {
-          "FLVisualization.Models": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Design": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Relational": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
-          "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-msbuild3-final",
-          "Microsoft.NETCore.App": "1.1.2"
-        },
-        "compile": {
-          "lib/netcoreapp1.1/FLVisualization.DAL.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp1.1/FLVisualization.DAL.dll": {}
-        }
-      },
-      "FLVisualization.Models/1.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "1.1.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/netstandard1.6/FLVisualization.Models.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.6/FLVisualization.Models.dll": {}
-        }
-      },
       "Libuv/1.9.1": {
         "type": "package",
         "dependencies": {
@@ -3910,31 +3876,47 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "FLVisualization.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.1",
+        "dependencies": {
+          "FLVisualization.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "1.1.0",
+          "Microsoft.EntityFrameworkCore.Design": "1.1.0",
+          "Microsoft.EntityFrameworkCore.Relational": "1.1.0",
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.0",
+          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-msbuild3-final",
+          "Microsoft.NETCore.App": "1.1.2"
+        },
+        "compile": {
+          "bin/placeholder/FLVisualization.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FLVisualization.DAL.dll": {}
+        }
+      },
+      "FLVisualization.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.6",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "1.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "bin/placeholder/FLVisualization.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FLVisualization.Models.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "FLVisualization.DAL/1.0.0": {
-      "sha512": "Y3Fc8WDKW40ZCRLlWQaoRnKeQs7CwjOicpUpM37Nolhu3Rd5QBsYY1Xa3ZSDTyE/yPKqok8cnwezc/SPReIeLQ==",
-      "type": "package",
-      "path": "flvisualization.dal/1.0.0",
-      "files": [
-        "flvisualization.dal.1.0.0.nupkg.sha512",
-        "flvisualization.dal.nuspec",
-        "lib/netcoreapp1.1/FLVisualization.DAL.dll",
-        "lib/netcoreapp1.1/FLVisualization.DAL.runtimeconfig.json"
-      ]
-    },
-    "FLVisualization.Models/1.0.0": {
-      "sha512": "hNl+6k9HlWX/+DpC2UFxs1x/83VcgsGwZaIm6fxlNOL4wg0VTQYFYDQbQJY6WZ7gk8V3zowySO3E15iJ3cSyJg==",
-      "type": "package",
-      "path": "flvisualization.models/1.0.0",
-      "files": [
-        "flvisualization.models.1.0.0.nupkg.sha512",
-        "flvisualization.models.nuspec",
-        "lib/netstandard1.6/FLVisualization.Models.dll"
-      ]
-    },
     "Libuv/1.9.1": {
       "sha512": "uqX2Frwf9PW8MaY7PRNY6HM5BpW1D8oj1EdqzrmbEFD5nH63Yat3aEjN/tws6Tw6Fk7LwmLBvtUh32tTeTaHiA==",
       "type": "package",
@@ -10314,6 +10296,16 @@
         "system.xml.xpath.xdocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "FLVisualization.DAL/1.0.0": {
+      "type": "project",
+      "path": "../FLVisualization.DAL/FLVisualization.DAL.csproj",
+      "msbuildProject": "../FLVisualization.DAL/FLVisualization.DAL.csproj"
+    },
+    "FLVisualization.Models/1.0.0": {
+      "type": "project",
+      "path": "../FLVisualization.Models/FLVisualization.Models.csproj",
+      "msbuildProject": "../FLVisualization.Models/FLVisualization.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10360,7 +10352,14 @@
       },
       "frameworks": {
         "netcoreapp1.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj": {
+              "projectPath": "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.Models\\FLVisualization.Models.csproj"
+            },
+            "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\FLVisualization.DAL.csproj": {
+              "projectPath": "C:\\Users\\Marina\\Documents\\GitHub\\FLVisualization\\FLVisualization\\FLVisualization.DAL\\FLVisualization.DAL.csproj"
+            }
+          }
         }
       }
     },
@@ -10395,14 +10394,6 @@
           "Microsoft.ApplicationInsights.AspNetCore": {
             "target": "Package",
             "version": "2.0.0"
-          },
-          "FLVisualization.DAL": {
-            "target": "Package",
-            "version": "1.0.0"
-          },
-          "FLVisualization.Models": {
-            "target": "Package",
-            "version": "1.0.0"
           },
           "Newtonsoft.Json": {
             "target": "Package",
